@@ -84,7 +84,8 @@ pip install kafka-python
 ```
 
 **Python Script to Stream Data:**
-go to producer.ipynb
+
+go to ```producer.ipynb```
 This script reads data from the CSV, picks a random row, and sends it to the Kafka topic demo_test on the EC2 instance every second.
 
 ### 3. Consumer: Read Data from Kafka and Store in AWS S3
