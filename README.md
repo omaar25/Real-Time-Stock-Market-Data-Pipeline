@@ -133,7 +133,7 @@ Once the data is cataloged by Glue, use AWS Athena to query the data.
 You can run SQL queries on the data stored in S3 using Athena's query editor.
 
 
-### Acknowledgments
+## Acknowledgments
 
 I would like to express my gratitude to [Darshil Parmar] for their guidance throughout the development of this project. 
 
