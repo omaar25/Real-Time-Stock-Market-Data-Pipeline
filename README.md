@@ -85,7 +85,7 @@ pip install kafka-python
 
 **Python Script to Stream Data:**
 
-go to ```producer.ipynb```
+go to ```Producer Kafka.ipynb```
 This script reads data from the CSV, picks a random row, and sends it to the Kafka topic demo_test on the EC2 instance every second.
 
 ### 3. Consumer: Read Data from Kafka and Store in AWS S3
@@ -109,7 +109,7 @@ You'll be prompted to input your IAM user credentials:
    
 **Python Script to Consume Data and Save to S3:**
 
-go to ```consumer.ipynb```
+go to ```Consumer Kafka.ipynb```
 This script consumes messages from the Kafka topic demo_test and writes them as JSON files to an S3 bucket. Make sure the EC2 instance has the necessary IAM role to write to S3.
 
 ### 4. AWS Glue Crawler
