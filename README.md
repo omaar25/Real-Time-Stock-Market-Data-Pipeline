@@ -128,7 +128,7 @@ bin/kafka-console-consumer.sh --topic stock_market --bootstrap-server <EC2-Publi
 * Create a crawler in AWS Glue that scans the S3 bucket where Kafka consumer is writing the data.
 * The crawler will create a schema and store it in a data catalog.
 
-## 5. Query Data with Athena:
+### 5. Query Data with Athena:
 Once the data is cataloged by Glue, use AWS Athena to query the data.
 You can run SQL queries on the data stored in S3 using Athena's query editor.
 
