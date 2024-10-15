@@ -1,9 +1,7 @@
 # Real-Time Stock Market Data Pipeline
 
 ## Project Overview
-The goal of this project is to build a **real-time data pipeline** that streams stock market data from a CSV file, sends it through **Kafka** running on an **EC2 instance**, and stores it in an **AWS S3 bucket** for analysis using **AWS Glue** and **Athena**. The pipeline involves:
-- **Producer**: Generating real-time stock data.
-- **Consumer**: Writing the data to S3.
+The goal of this project is to build a **real-time data pipeline** that streams stock market data from a CSV file, sends it through **Kafka** running on an **EC2 instance**, and stores it in an **AWS S3 bucket** for analysis using **AWS Glue** and **Athena**.
 
 ### Pipeline Stages:
 1. **Generate Real-Time Data** from CSV using Python
