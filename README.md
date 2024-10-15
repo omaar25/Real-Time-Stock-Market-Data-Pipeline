@@ -56,6 +56,7 @@ export KAFKA_HEAP_OPTS="-Xmx256M -Xms128M"
 ```
 cd kafka_2.12-3.3.1
 ```
+```
 bin/kafka-server-start.sh config/server.properties
 ```
 
