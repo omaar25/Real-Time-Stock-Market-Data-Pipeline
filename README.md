@@ -7,8 +7,8 @@ The goal of this project is to build a **real-time data pipeline** that streams 
 
 ### Pipeline Stages:
 1. **Generate Real-Time Data** from CSV using Python
-2. **Kafka Producer** (local) sends data to Kafka on EC2
-3. **Kafka Consumer** (on EC2) sends data to S3
+2. **Kafka Producer**  sends data to Kafka on EC2
+3. **Kafka Consumer** sends data to S3
 4. **AWS Glue** crawler to catalog data
 5. **Query data** using AWS Athena
 
