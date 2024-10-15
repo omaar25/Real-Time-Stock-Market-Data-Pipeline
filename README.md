@@ -72,7 +72,7 @@ advertised.listeners=PLAINTEXT://<EC2-Public-IP>:9092
 **Create Kafka Topic:**
 
 ```
-bin/kafka-topics.sh --create --topic demo_test --bootstrap-server <EC2-Public-IP>:9092 --replication-factor 1 --p
+bin/kafka-topics.sh --create --topic stock_market --bootstrap-server <EC2-Public-IP>:9092 --replication-factor 1 --p
 ```
 
 ### 2. Producer: Send Stock Market Data to Kafka
@@ -86,7 +86,7 @@ pip install kafka-python
 **Python Script to Stream Data:**
 
 go to ```Producer Kafka.ipynb```
-This script reads data from the CSV, picks a random row, and sends it to the Kafka topic demo_test on the EC2 instance every second.
+This script reads data from the CSV, picks a random row, and sends it to the Kafka topic stock_market on the EC2 instance.
 
 ### 3. Consumer: Read Data from Kafka and Store in AWS S3
 
@@ -94,6 +94,10 @@ This script reads data from the CSV, picks a random row, and sends it to the Kaf
 
 ```
 pip install kafka-python s3fs
+```
+To Start the Kafka Producer:
+```
+bin/kafka-console-producer.sh --topic stock_market --bootstrap-server <EC2-Public-IP>:9092
 ```
 
 **Configure AWS CLI with IAM User Credentials**
@@ -111,6 +115,11 @@ You'll be prompted to input your IAM user credentials:
 
 go to ```Consumer Kafka.ipynb```
 This script consumes messages from the Kafka topic demo_test and writes them as JSON files to an S3 bucket. Make sure the EC2 instance has the necessary IAM role to write to S3.
+
+To Start the Kafka Consumer:
+```
+bin/kafka-console-consumer.sh --topic stock_market --bootstrap-server <EC2-Public-IP>:9092
+```
 
 ### 4. AWS Glue Crawler
 
