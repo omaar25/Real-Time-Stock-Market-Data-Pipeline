@@ -26,7 +26,7 @@ The goal of this project is to build a **real-time data pipeline** that streams 
 **Prerequisites**: An EC2 instance running Amazon Linux 2 and Java installed.
 
 **SSH into EC2:**
-```bash
+```
 ssh -i "your-ec2-key.pem" ec2-user@<EC2-Public-IP>
 ```
 **Install Java:**
@@ -41,18 +41,21 @@ tar -xvf kafka_2.12-3.3.1.tgz
 
 **Start ZooKeeper (Kafka's coordination service):**
 
-bash
 ```
 cd kafka_2.12-3.3.1
+```
+```
 bin/zookeeper-server-start.sh config/zookeeper.properties
 ```
 
 **Start Kafka Broker: In a new terminal, SSH into the EC2 instance again and run:**
 
-bash
 ```
 export KAFKA_HEAP_OPTS="-Xmx256M -Xms128M"
+```
+```
 cd kafka_2.12-3.3.1
+```
 bin/kafka-server-start.sh config/server.properties
 ```
 
