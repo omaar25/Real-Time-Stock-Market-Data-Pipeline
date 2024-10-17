@@ -133,10 +133,13 @@ You can run SQL queries on the data stored in S3 using Athena's query editor.
 
 ## Acknowledgments
 
-I would like to express my gratitude to Darshil Parmar for his guidance throughout the development of this project. 
+I would like to express my gratitude to Darshil Joseph Machado , Parmar and zach wilson for their invaluable guidance. Their insights and expertise have significantly influenced my learning and growth in this field.
 
-You can find more of his work on:
-- [YouTube Channel](https://www.youtube.com/@DarshilParmar)
-- [LinkedIn Profile](https://www.linkedin.com/in/darshil-parmar/)
+
+You can find them on:
+- [Zach Wilson LinkedIn Profile](https://www.linkedin.com/in/eczachly/)
+- [Joseph Machado LinkedIn Profile](https://www.linkedin.com/in/josephmachado1991/)
+- [Parmar YouTube Channel](https://www.youtube.com/@DarshilParmar)
+- [Parmar LinkedIn Profile](https://www.linkedin.com/in/darshil-parmar/)
 
 
